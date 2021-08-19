@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamers Connect</title>
+    <link rel="stylesheet" href="socials.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="socials.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC33-csay8I1NWeuw9fc3dHabk8TBhCpoc",
+    authDomain: "fir-day-87553.firebaseapp.com",
+    projectId: "fir-day-87553",
+    storageBucket: "fir-day-87553.appspot.com",
+    messagingSenderId: "313937751701",
+    appId: "1:313937751701:web:9eaa7ca39c3a4620d2b59c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+    <div id="nav_bar">
+        <a id="Log" href= "index.html" target="_blank">5 Borough Gaming</a>
+        <a href="getinvolved.html" target="_blank">Get Involved</a>
+        <a href= "socials.html" target="_blank">Socials</a>
+        <a href= "whereto.html" target="_blank">Where To</a>
+    </div>
+    <div id="pg_title">
+        <h1>Let's Link Up!</h1>
+    </div>
+    <div id="subtext"><p>Time to Share Those Socials!</p></div>
+
+    <canvas id="granim-canvas"></canvas>
+
+
+<form id="formFB" action="#">
+  <a href="#" class="fa fa-facebook"></a>
+  <span class="facebook"><input type="text" size="60" value="" name="facebook" id="facebook"/></span>
+  <button type="button" onclick="return FirebaseFB(formFB)">Enter your Facebook Social Here!</button>
+  <div id="facebook_user" class= "Socials">
+
+  </div>
+  <!-- <input type="submit" value="Enter your Facebook Social Here!" id="EnterFB" name="EnterFB"/> -->
+  <br><br>
+</form>
+
+<form id="formTW" action="#">
+  <a href="#" class="fa fa-twitter"></a>
+  <span class="twitter"><input type="text" size="60" value="" name="twitter" id="twitter"/></span>
+  <button type="button" onclick="return FirebaseTW(formTW)">Enter your Twitter Social Here!</button>
+  <div id="Twitter_users" class= "Socials"></div>
+  <!-- <input type="submit" value="Enter your Twitter Social Here!" id="EnterTW" name="EnterTW"/> -->
+  <br><br>
+</form>
+
+<form id="formLD" action="#">
+  <a href="#" class="fa fa-linkedin"></a>
+  <span class="linkedin"><input type="text" size="60" value="" name="linkedin" id="linkedin"/></span>
+  <button type="button" onclick="return FirebaseLD(formLD)">Enter your Linkedin Social Here!</button>
+  <div id= "linkedin_users" class= "Socials"></div>
+  <!-- <input type="submit" value="Enter your Linkedin Social Here!" class="EnterLD" name="EnterLD"/> -->
+  <br><br>
+</form>
+
+
+<form id="formYT" action="#">
+  <a href="#" class="fa fa-youtube"></a>
+  <span class="youtube"><input type="text" size="60" value="" name="youtube" id="youtube"/></span>
+  <button type="button" onclick="return FirebaseYT(formYT)">Enter your YT Channel Here!</button>
+  <div id= "YT_users" class= "Socials"></div>
+  <!-- <input type="submit" value="Enter your YT Channel Here!" class="EnterYT" name="EnterYT"/> -->
+  <br><br>
+</form>
+
+<form id="formIG" action="#">
+  <a href="#" class="fa fa-instagram"></a>
+  <span class="value"><input type="text" size="60" value="" name="instagram" id="instagram"/></span>
+  <button type="button" onclick="return FirebaseIG(formIG)">Enter your Instagram Social Here!</button>
+  <div id= "insta_users" class= "Socials"></div>
+  <!-- <input type="submit" value="Enter your Instagram Social Here!" class="EnterIG" name="EnterIG"/> -->
+  <br><br>
+</form>
+
+
+<form id="formSC" action="#">
+  <a href="#" class="fa fa-snapchat-ghost"></a>
+  <span class="value"><input type="text" size="60" value="" name="snapchat" id="snapchat"/></span>
+  <button type="button" onclick="return FirebaseSC(formSC)">Enter your Snapchat Social Here!</button>
+  <div id= "Snap_users" class= "Socials"></div>
+
+  <!-- <input type="submit" value="Enter your Snapchat Social Here!" class="EnterSC" name="EnterSC"/> -->
+</form>
+ 
+
+
+
+</body>
+</html>

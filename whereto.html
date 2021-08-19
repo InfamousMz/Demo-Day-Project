@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whereto</title>
+    <link rel="stylesheet" href="whereto.css">
+    <script src="whereto.js" defer></script>
+
+</head>
+<body>
+    <div id="nav_bar">
+        <a id="Log" href="index.html"> 5 Borough Gaming</a>
+        <a href="getinvolved.html">Get Involved</a>
+        <a href="socials.html">Socials</a>
+        <a href="whereto.html">Where To</a>
+    </div>
+    <br><br><br>
+    <div>
+        <form>
+            <input type="text" id="zipcode" NAME="zipcodeHandler" placeholder="Zipcode" >
+            <input type="button" id="submit" onclick = "transformZipCode(zipcode.value)">enter</button>
+        </form>
+
+       
+        <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5TYxI5yg7zRiJKWGyqm7P3a7ubq2ngUg&callback=initMap&libraries=&v=weekly"
+          async
+        ></script>
+        
+    </div>
+  
+
+
+</body>
+</html>

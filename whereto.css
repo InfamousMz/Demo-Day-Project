@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(172, 172, 223) ;
+}
+
+#nav_bar {
+    display: flex;
+    font-size: 28px;
+    font-weight: lighter;
+    justify-content: space-around;
+    font-family: "Oswald", sans-serif;
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+}
+
+#submit {
+    width: 30px;
+    height: 30px;
+}

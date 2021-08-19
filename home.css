@@ -1,0 +1,33 @@
+div {
+    font-family: Helvetica;
+    background-color: blueviolet;
+    color:coral;
+    font-size: 32px;
+    padding: 5px;
+}
+​
+#big_div {
+    display: flex;
+    justify-content: space-around;
+}
+​
+img {
+    width: 90px;
+    height: 60px;
+}
+​
+.items:hover {
+    background-color:crimson;
+    opacity: 0.5;
+}
+​
+a {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+}
+​
+style{
+    width: 10%;
+    height: 30%;
+}

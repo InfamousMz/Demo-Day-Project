@@ -1,0 +1,45 @@
+#nav_bar {
+    display: flex;
+    text-align: column;
+    justify-content: space-evenly;
+    font-size: 28px;
+    font-weight: lighter;
+    font-family: "Oswald", sans-serif;
+}
+.main_pg p {
+    color:black;
+}
+.sub_title h1 {
+    color:grey;
+}
+.sub_title p {
+    display: flex;
+    text-align: column;
+    color: black;
+    font-family: "Prompt", sans-serif;
+    font-size: 17px;
+}
+#granim-canvas {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+@media (max-width: 630px) {
+    #nav_bar {
+        font-size: 20px;
+    }
+}
+.subtitle_2 {
+    color:grey;
+    font-size: 20px;
+} 
+.subtitle_2 p {
+    display: flex;
+    text-align: column;
+    color: black;
+    font-family: "Prompt", sans-serif;
+    font-size:17px;
+}
